@@ -34,8 +34,6 @@ function validateRegistration(values) {
     errors.password = "Add at least one lowercase letter.";
   } else if (!/\d/.test(values.password)) {
     errors.password = "Add at least one number.";
-  } else if (!/[^A-Za-z0-9]/.test(values.password)) {
-    errors.password = "Add at least one special character.";
   }
 
   if (!values.confirmPassword) {
@@ -179,7 +177,8 @@ export default function RegisterPage() {
         />
 
         <p className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-xs leading-6 text-slate-300">
-          Use at least 8 characters with uppercase, lowercase, a number, and a special character.
+          Use at least 8 characters with uppercase, lowercase, and a number. Browser-generated
+          strong passwords are supported.
         </p>
 
         <button
