@@ -1,0 +1,37 @@
+{
+  "name": "secure-user-authentication",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack secure authentication system built with Next.js, NextAuth.js, and MongoDB.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "nextjs",
+    "nextauth",
+    "mongodb",
+    "authentication",
+    "tailwindcss"
+  ],
+  "author": "Jiregna Dereje",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "mongodb": "^7.1.1",
+    "mongoose": "^9.3.3",
+    "next": "^16.2.2",
+    "next-auth": "^4.24.13",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}
